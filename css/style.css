@@ -44,7 +44,7 @@ body{
   }
 
   .navbar a:hover, .navbar a.active{
-    color: #0ef;
+    color: #eb91d4;
     text-transform: uppercase;
   }
 
@@ -79,7 +79,7 @@ animation-delay: .7s;
 
 
 .home-content h3 span{
-  color: #0ef;
+  color: #eb91d4;
 }
 
 .home-content h1{
@@ -107,10 +107,10 @@ animation-delay: .7s;
   width: 40px;
   height: 40px;
   background: transparent;
-  border: 2px solid #0ef;
+  border: 2px solid #eb91d4;
   border-radius: 50%;
   font-size: 20px;
-  color: #0ef;
+  color: #eb91d4;
   text-decoration: none;
   margin: 30px 15px 30px 0;
   transition: .5s ease;
@@ -120,17 +120,17 @@ animation-delay: .7s;
 }
 
 .social-media a:hover{
-  background: #0ef;
+  background: #eb91d4;
   color: #1f242d;
-  box-shadow: 0 0 20px #0ef;
+  box-shadow: 0 0 20px #eb91d4;
 }
 
 .btn{
   display: inline-flex;
   padding: 12px 28px;
-  background: #0ef;
+  background: #d964bc;
   border-radius: 40px;
-  box-shadow: 0 0 10px #0ef;
+  box-shadow: 0 0 6px #eb91d4;
   font-size: 16px;
   font-weight: 500;
   color: #1f242d;
