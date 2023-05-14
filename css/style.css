@@ -32,7 +32,7 @@ body {
 
 /* NavBar */
 .header {
-  position: fixed;
+  position: static;
   top: 0;
   left: 0;
   width: 100%;
@@ -92,7 +92,7 @@ section {
   justify-content: space-between;
   align-items: center;
   padding: 0 9%;
-  margin-top: 80px;
+  margin-top: 10px;
 }
 
 .home-content {
@@ -235,6 +235,7 @@ span {
   border-bottom: .2rem solid var(--second-bg-color);
   border-left: .2rem solid var(--main-color);
   border-right: .2rem solid var(--main-color);
+  animation: aboutSpinner 8s linear infinite;
 }
 
 .about-content {
@@ -355,20 +356,15 @@ span {
 }
 
 .skills-coloumn:nth-child(2) .skills-content .progress:nth-child(2) .bar span {
-  width: 70%;
+  width: 90%;
 }
 
 .skills-coloumn:nth-child(2) .skills-content .progress:nth-child(3) .bar span {
-  width: 65%;
+  width: 80%;
 }
 
 .skills-coloumn:nth-child(2) .skills-content .progress:nth-child(4) .bar span {
-  width: 65%;
-}
-
-
-.skills-coloumn:nth-child(2) .skills-content .progress:nth-child(5) .bar span {
-  width: 80%;
+  width: 70%;
 }
 
 
@@ -655,3 +651,105 @@ width: 100%;
     transform: translateY(0);
   }
 }
+
+@keyframes aboutSpinner {
+  100%{
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@media (max-width:1200px) {
+ html {
+  font-size: 55%;
+ };  
+}
+
+@media (max-width: 991px){
+  .header{
+    padding: 2rem 4%;
+  }
+
+  section{
+    padding: 10rem 4% 2rem;
+  }
+
+  .home{
+    padding: 0 4%;
+  }
+
+  .footer{
+    padding: 2rem 4%;
+  }
+}
+
+@media(max-width: 768px){
+  .header{
+    background: var(--bg-color);
+  }
+
+  #menu-icon{
+    display: block;
+  }
+
+  .navbar{ 
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem 4%;
+    background: var(--bg-color);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+  }
+
+  .navbar a{
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 0;
+  }
+}
+
+@media(max-width:520px){
+  html{
+    font-size: 50%;
+  }
+
+  .home-content h1{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .social-media{
+    width: 160px;
+  }
+
+
+  .social-media a{
+    width: 38px;
+    height: 38px;
+  }
+}
+
+@media(max-width:462px){
+  home-content h1{
+font-size: 5.2rem;
+  }
+
+  .project{
+    padding: 10rem 4% 5rem 5%;
+  }
+
+
+  .contact form .input-box .input-field{
+    width: 100%
+  }
+
+  .footer{
+    flex-direction: column;
+  }
+
+  .footer p{
+    margin-top: 2rem;
+  }
+  }
+
+
